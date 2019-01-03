@@ -1,0 +1,101 @@
+html, body {
+    background: #2f6999;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.container{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    color: white;
+    text-align: left;
+    letter-spacing: 2px;
+    marker-end: 10%;
+    padding: 2%;
+    height:10%;
+}
+.navbar-title{
+    font: 3em sans-serif;
+}
+
+.row{
+    height: 100%;
+    overflow: scroll;
+    padding: 2em;
+}
+
+.col{
+    max-width: 20%;
+    max-height: 60%;
+    /* position: relative; */
+    margin-bottom: 3em;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    float: left;
+    box-shadow: #113e33;
+    /* margin: 20%; */
+}
+
+/* .cardRow{
+    height: 100%;
+    overflow: scroll;
+} */
+
+
+
+.containerCard{
+    height: 90%;
+    overflow: auto;
+}
+
+
+.buttonHolder{
+    /* bottom: 2px; */
+    margin-bottom: 0%;
+    position: relative;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-start;  */
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.saveButton{
+    width: 50%;
+} 
+
+.id-label{
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    visibility:collapse;
+
+}
+
+.deleteButton{
+    width: 50%;
+}
+.card-title{
+    width: 100%;
+    height:20%;
+}
+
+.card-content{
+    width: 100%;
+    height: 40%;
+}
+
+.card-contents{
+    height: 100%;
+    width: 100%;
+}
