@@ -1,6 +1,6 @@
 latestId = 0;
 firstCall = 0;
-
+BASE_URL = "http://localhost:4000"
  loadCards(function(){
    
     card0 = document.getElementById('card0');
@@ -26,7 +26,7 @@ firstCall = 0;
 
  function loadJSON(callback, cb2) {
   
-  var cardResponse = $.get( "http://localhost:4000/tasks", function() {
+  var cardResponse = $.get( BASE_URL+ "/tasks", function() {
     // alert( "success" );
     // alert(jqxhr.file);
     // console.log(cardResponse.file);
@@ -155,7 +155,7 @@ function storeData(element){
     "Created_date": "2014-11-20T09:11:00.000Z"};
     console.log("data to be send: ", sendData);
     $.ajax({
-      url: "http://localhost:4000/tasks/",
+      url: BASE_URL+"/tasks/",
       type: "POST",
       data: sendData,
       // dataType: "application/x-www-form-urlencoded",
@@ -194,7 +194,7 @@ function updateData(element){
   "Created_date": "2014-11-20T09:11:00.000Z"};
   console.log("data to be send: ", sendData);
   $.ajax({
-    url: "http://localhost:4000/tasks/"+id,
+    url: BASE_URL+"/tasks/"+id,
     type: "PUT",
     data: sendData,
     // dataType: "application/x-www-form-urlencoded",
@@ -227,7 +227,7 @@ function deleteData(element){
   id = card.getElementsByClassName('id-label')[0].innerHTML;
   console.log("delete element id: ", id);
   $.ajax({
-    url: "http://localhost:4000/tasks/"+id,
+    url: BASE_URL+"/tasks/"+id,
     type: "DELETE",
     success: function (result) {
         switch (result) {

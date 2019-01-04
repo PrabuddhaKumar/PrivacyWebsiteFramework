@@ -25,16 +25,14 @@ Certain variables are dependent on the environment of execution.
 
 To match the values, edit the following sections of the code:
 
-'Extention':
+'Extension':
 
 From the 'Extension' directory, go to ./extension/manifest.json
-
 Update the URL inside content_scripts/matches to the URL of the node server
+
 Go to ./extension/index_js.js
 Update the URL in line 29 to the URL of the node server
-Update the URL in line 158 to the URL of the node server
-Update the URL in line 197 to the URL of the node server
-Update the URL in line 230 to the URL of the node server
+
 
 
 For any other queries or clarifications, please contact me at prabkumar@cs.stonybrook.edu
